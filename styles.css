@@ -1,0 +1,108 @@
+@font-face {
+    font-family: CursedTimer;
+    src: url(CursedTimerUlil-Aznm.ttf);
+}
+
+body {
+    margin:0;
+}
+
+.container-scoreboard {
+    width: 575px;
+    height: 385px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #1B244A;
+    display: flex;
+    justify-content: space-around;
+}
+
+#home-name {
+    width: 149px;
+    height: 36px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:xx-large;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+#guest-name {
+    width: 149px;
+    height: 36px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:xx-large;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+#score-container-home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 155px;
+    height: 120px;
+    background-color: #080001;
+
+}
+
+#score-container-guest {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 155px;
+    height: 120px;
+    background-color: #080001;
+
+}
+
+
+#home-score {
+    color: #F94F6D;
+    font-family: CursedTimer;
+    font-size: 100px;
+    padding-top: 20px;
+}
+
+
+
+#guest-score {
+    color: #F94F6D;
+    font-family: CursedTimer;
+    font-size: 100px;
+}
+
+.container-control-panel {
+    width: 575px;
+    height: 385px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    background-color: #1B244A;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:large;
+    color: white;
+
+}
+
+#score-setting-wrapper {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+#reset-btn {
+
+        background: white;
+        color: black;
+        margin: auto auto auto auto;
+        border: 1px solid black;
+        padding: 10px 16px;
+        font-weight: bold;
+        cursor: pointer;
+        border-radius: 20px;
+        display: block;
+
+}

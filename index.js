@@ -12,38 +12,31 @@ let homeNameEl = document.getElementById("home-name")
 let guestNameEl = document.getElementById("guest-name")
 
 
-function incrementHome1() {
-    scoreHome += 1
+function incrementHome(num) {
+    scoreHome += num
     scoreHomeEl.textContent = scoreHome
+    render()
+}
+
+function incrementGuest(num) {
+    scoreGuest += num;
+    render()
+
+}
+
+function render() {
+    scoreHomeEl.textContent = scoreHome
+    scoreGuestEl.textContent = scoreGuest
     // if (scoreHome > scoreGuest) {
-    //     document.getElementById("score-container-home").style.backgroundColor = "#ff0000"
-    // }
-}
-
-function incrementHome2() {
-    scoreHome += 2
-    scoreHomeEl.textContent = scoreHome 
-}
-
-function incrementHome3() {
-    scoreHome += 3
-    scoreHomeEl.textContent = scoreHome 
-}
-
-function incrementGuest1() {
-    scoreGuest += 1;
-    scoreGuestEl.textContent = scoreGuest
-}
-
-function incrementGuest2() {
-    scoreGuest += 2;
-    scoreGuestEl.textContent = scoreGuest
-}
-
-function incrementGuest3() {
-    scoreGuest += 3;
-    scoreGuestEl.textContent = scoreGuest
-}
+    //     document.getElementById("score-container-home").style.backgroundColor = "red"
+    //     document.getElementById("score-container-guest").style.backgroundColor = "#080001"
+    // } else if(scoreHome === scoreGuest) {
+    //     document.getElementById("score-container-home").style.backgroundColor = "#080001"
+    //     document.getElementById("score-container-guest").style.backgroundColor = "#080001"
+    // } else {
+    //     document.getElementById("score-container-home").style.backgroundColor = "#080001"
+    //     document.getElementById("score-container-guest").style.backgroundColor = "red"
+    }
 
 function resetScore() {
     scoreHome = 0
@@ -54,6 +47,9 @@ function resetScore() {
     document.getElementById("score-container-guest").style.backgroundColor = "#080001"
     homeNameEl.innerHTML = "HOME"
     guestNameEl.innerHTML = "GUEST"
+    homeNameEl.value = " "
+    guestNameEl.value = " "
+
 }
 
 nameBtn.addEventListener("click", function() {
@@ -69,9 +65,5 @@ nameBtn.addEventListener("click", function() {
     } else {
         guestName = "GUEST"
     }
-    console.log(homeName)
-    console.log(guestName)
-    console.log(document.getElementById("input-home-name").value)
-    console.log(document.getElementById("input-guest-name").value)
 
 })
